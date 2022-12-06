@@ -2,7 +2,7 @@
 #### Junior Frontend Developer
 ---
 ### Contacts:
-**Phone:** +7 (705) 872-95-39
-**Email:** andro.front99@gmail.com
-**Telegram:** @davilex_x
-**Linkedin:** https://www.linkedin.com/in/kharmansky/
+__Phone:__ +7 (705) 872-95-39
+__Email:__ andro.front99@gmail.com
+__Telegram:__ @davilex_x
+__Linkedin:__ https://www.linkedin.com/in/kharmansky/
