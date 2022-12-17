@@ -1,4 +1,11 @@
+// === VARIABLES ===
+
+// colors
+$color-font: #000;
+$color-underline: rgb(0, 55, 255);
+
 // === MIXINS ===
+
 // fonts
 @mixin font-inter {
   font-family: "Inter", sans-serif;
@@ -6,4 +13,74 @@
 
 @mixin font-montserrat {
   font-family: "Montserrat Subrayada", sans-serif;
+}
+
+// flex
+@mixin flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center();
+  flex-direction: column;
+}
+
+@mixin flex-center-row {
+  @include flex-center();
+  flex-direction: row;
+}
+
+// clear link styles
+@mixin links {
+  text-decoration: none;
+  color: #000;
+}
+
+// === STYLES ===
+
+// body
+body {
+  @include flex-center-column();
+  @include font-inter();
+}
+
+// header
+.header {
+}
+
+// list
+.list {
+  @include flex-center-row();
+  font-weight: 500;
+
+  &__item {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+
+  &__link {
+    @include links();
+    position: relative;
+    font-size: 1.2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background-color: $color-underline;
+      transform-origin: bottom left;
+      transition: transform 0.5s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
