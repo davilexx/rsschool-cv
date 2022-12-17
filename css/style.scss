@@ -1,0 +1,9 @@
+// === MIXINS ===
+// fonts
+@mixin font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+@mixin font-montserrat {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
