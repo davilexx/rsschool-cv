@@ -346,3 +346,32 @@ h6 {
     margin-left: 2rem;
   }
 }
+
+// footer
+.footer {
+  min-height: 100vh;
+  position: relative;
+
+  &__wrapper {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flex-center-row();
+    display: flex;
+  }
+
+  &__item {
+    font-size: 3rem;
+    padding: 8rem;
+  }
+
+  &__img {
+    width: 10rem;
+
+    &_gh {
+      width: 5rem;
+    }
+  }
+}
