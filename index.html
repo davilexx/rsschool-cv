@@ -58,8 +58,8 @@
               <h1 class="about__title">Alexander Kharmansky</h1>
               <p class="about__info">23 y.o., Astana, Kazakhstan</p>
               <p class="about__desc">
-                Frontend developer with more than two years of experience
-                working with HTML, CSS/SCSS, JavaScript and basics of React.
+                Front-end developer with more than two years of experience
+                working with HTML, CSS, SCSS (SASS), JavaScript and basics of React.
                 Always using Flexbox, Bootstrap and BEM-methodology in
                 projects. Had experience developing e-commerce stores using
                 CMS OpenCart. Also worked with PHP, MySQL, Git, npm, Figma,
@@ -107,10 +107,9 @@
                   <a class="work__link" href="https://unographics.000webhostapp.com/" target="_blank">uno</a>
                   <br>
                   <p class="work__description">
-                    A page and a custom admin-panel for a designer. For this
-                    one I used HTML, SCSS, JS, PHP and MySQL. In admin-panel
-                    you can add, remove and edit artworks images, names,
-                    b-side names, categories, etc. Every artwork page is
+                    A page and a custom admin dashboard. For this
+                    project I used HTML, SCSS, JS, PHP and MySQL. In dashboard
+                    you can add, remove and edit any of artwork information. Every artwork page is
                     generated depending on its ID.
                   </p>
                 </div>
@@ -121,7 +120,7 @@
                   <a class="work__link" href="https://saldi.kz/" target="_blank">Saldi</a>
                   <p class="work__description">
                     An e-commerce responsive store based on CMS OpenCart with
-                    custom design.
+                    custom design, Telegram order notifications and simplified order page.
                   </p>
                 </div>
               </div>
@@ -132,7 +131,7 @@
                     Museum
                   </a>
                   <p class="work__description">
-                    A project I created while attending to RS School course.
+                    A project I created while attending to RS School course Stage#1 in 2021.
                     This one contains a custom JS video player and image
                     slider in the Explore section. It’s also responsive.
                   </p>
@@ -144,11 +143,11 @@
                   <a class="work__link" href="https://davilexx.github.io/momentum/" target="_blank">Momentum</a>
                   <p class="work__description">
                     Another project I developed at RS School. This is a
-                    replica of official Momentum extension. Some of the
+                    replica of an official Momentum extension. Some of the
                     implemented functionality: saving the name and the weather
-                    location in a local storage, audio player, randomised
-                    background and the quotes, settings where you can choose
-                    what to display and also change the language.
+                    location in a local storage, an audio player, a randomized
+                    background and quotes, and also settings where you can choose
+                    what to display and change the language.
                   </p>
                 </div>
               </div>
@@ -233,12 +232,9 @@
     for (let i = 0; i &lt; strArr.length; i++) {
       if (strArr[i] !== strArr[i - 1]) {
         count = 0;
-        count++;
-        countObj[strArr[i]] = count;
-      } else {
-        count++;
-        countObj[strArr[i]] = count;
       }
+      count++;
+      countObj[strArr[i]] = count;
     }
     
     return countObj;
