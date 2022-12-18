@@ -60,6 +60,11 @@ $color-accent-blue: rgb(0, 35, 230);
 
 // === STYLES ===
 
+// html
+html {
+  scroll-behavior: smooth;
+}
+
 // body
 body {
   @include font-inter();
@@ -111,7 +116,7 @@ h6 {
   position: fixed;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: $color-main;
   z-index: 100;
 }
 
@@ -349,7 +354,7 @@ h6 {
 
 // footer
 .footer {
-  min-height: 100vh;
+  min-height: 25rem;
   position: relative;
 
   &__wrapper {

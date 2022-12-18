@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: rgb(35, 35, 35);
@@ -46,7 +50,7 @@ h6 {
   position: fixed;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(231, 231, 231);
   z-index: 100;
 }
 
@@ -306,7 +310,7 @@ h6 {
 }
 
 .footer {
-  min-height: 100vh;
+  min-height: 25rem;
   position: relative;
 }
 .footer__wrapper {
