@@ -103,6 +103,7 @@ h6 {
 // titles
 .title {
   font-size: 4rem;
+  margin-top: 8rem;
 }
 
 // header
@@ -259,5 +260,33 @@ h6 {
   &__item {
     font-size: 1.2rem;
     margin: 1rem 0rem;
+  }
+}
+
+// code example
+.example {
+  &__kata {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    @include links();
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  &__desc {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  &__code {
+    code {
+      border-radius: 0.5rem;
+    }
   }
 }

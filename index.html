@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -237,25 +241,72 @@
             <div class="experience__row row">
               <h2 class="experience__title title">Experience and courses</h2>
               <h4 class="experience__job">Freelance</h4>
-              <p class="experience__desc">Jan 1 2021 – currently</p>
+              <p class="experience__desc">Jan 1 2021–currently</p>
               <h4 class="experience__job experience__job_courses courses">
                 Courses
               </h4>
               <ul class="courses__list">
                 <li class="courses__item">
-                  Glo Academy HTML & CSS Advanced Course (2016)
+                  Rolling Scopes School Course Stage#0 (2022–currently)
+                </li>
+                <li class="courses__item">
+                  Rolling Scopes School Course Stage#1 (2021)
                 </li>
                 <li class="courses__item">
                   Gorbunov’s Bureau Design School Preparatory Course (2021)
                 </li>
                 <li class="courses__item">
-                  Rolling Scopes School Course Stage#1 (2021)
+                  Glo Academy HTML & CSS Advanced Course (2016)
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <section class="main__example example"></section>
+        <section class="main__example example">
+          <div class="example__container container">
+            <div class="example__row row">
+              <h2 class="example__title title">Code example</h2>
+              <h4 class="example__kata">Count characters in your string</h4>
+              <a
+                href="https://www.codewars.com/kata/52efefcbcdf57161d4000091"
+                class="example__link"
+                >6 kyu kata from Codewars</a
+              >
+              <p class="example__desc">
+                The main idea is to count all the occurring characters in a
+                string. If you have a string like aba, then the result should be
+                <code>{'a': 2, 'b': 1}</code>. What if the string is empty? Then
+                the result should be empty object literal, <code>{}</code>.
+              </p>
+              <div class="example__code">
+                <pre><code class="code__js language-js hljs language-javascript">
+  const count = string => {  
+    if (string.length === 0) {
+      return {};
+    }
+
+    const strArr = string.split('').sort();
+    let countObj = {};
+    let count = 0;
+
+    for (let i = 0; i < strArr.length; i++) {
+      if (strArr[i] !== strArr[i - 1]) {
+        count = 0;
+        count++;
+        countObj[strArr[i]] = count;
+      } else {
+        count++;
+        countObj[strArr[i]] = count;
+      }
+    }
+    
+    return countObj;
+  }
+                </code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="main__education education"></section>
         <section class="main__languages languages"></section>
         <section class="main__contacts contacts"></section>
@@ -263,6 +314,8 @@
       <footer class="page__footer footer"></footer>
     </div>
     <!-- scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

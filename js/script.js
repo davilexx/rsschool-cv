@@ -1,3 +1,5 @@
+hljs.highlightAll();
+
 const bg = document.querySelector(".main__bg");
 
 window.addEventListener("scroll", () => {
