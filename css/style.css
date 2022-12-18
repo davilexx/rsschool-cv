@@ -263,4 +263,44 @@ h6 {
 .languages__lang {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+.contacts__list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 2rem;
+}
+.contacts__img {
+  width: 2rem;
+  height: 2rem;
+}
+.contacts__item {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contacts__link {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+  position: relative;
+  margin-left: 2rem;
+}
+.contacts__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 35, 230);
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+}
+.contacts__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }/*# sourceMappingURL=style.css.map */

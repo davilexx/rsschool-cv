@@ -320,3 +320,29 @@ h6 {
     margin-bottom: 0;
   }
 }
+
+// contacts
+.contacts {
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  &__img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__item {
+    margin: 2rem 0;
+    @include flex-center-row();
+    justify-content: flex-start;
+  }
+
+  &__link {
+    @include links();
+    position: relative;
+    margin-left: 2rem;
+  }
+}
