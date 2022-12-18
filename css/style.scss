@@ -290,3 +290,25 @@ h6 {
     }
   }
 }
+
+// education
+.education {
+  &__wrapper {
+    margin: 3rem 0;
+
+    @include flex-center-column();
+    align-items: flex-start;
+  }
+
+  &__university {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  &__specialty {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
