@@ -1,12 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>html-css-git-task</title>
-  </head>
-  <body>
-    <h1>Hello!</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Kharmansky - Junior Front-end developer</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <div class="page__wrapper wrapper">
+    <header class="page__header header">
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <li class="list__item">
+            <a href="#about" class="list__link">About</a>
+          </li>
+          <li class="list__item">
+            <a href="#skills" class="list__link">Skills</a>
+          </li>
+          <li class="list__item">
+            <a href="#projects" class="list__link">Projects</a>
+          </li>
+          <li class="list__item">
+            <a href="#experience" class="list__link">Experience and courses</a>
+          </li>
+          <li class="list__item">
+            <a href="#example" class="list__link">Code example</a>
+          </li>
+          <li class="list__item">
+            <a href="#education" class="list__link">Education</a>
+          </li>
+          <li class="list__item">
+            <a href="#languages" class="list__link">Languages</a>
+          </li>
+          <li class="list__item">
+            <a href="#contacts" class="list__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__main main">
+      <section id="about" class="main__about about">
+        <div class="about__container container">
+          <div class="about__row row">
+            <img src="assets/img/about-img.jpeg" alt="img" class="about__img">
+            <div class="about__text">
+              <h1 class="about__title">Alexander Kharmansky</h1>
+              <p class="about__info">23 y.o., Astana, Kazakhstan</p>
+              <p class="about__desc">
+                Frontend developer with more than two years of experience
+                working with HTML, CSS/SCSS, JavaScript and basics of React.
+                Always using Flexbox, Bootstrap and BEM-methodology in
+                projects. Had experience developing e-commerce stores using
+                CMS OpenCart. Also worked with PHP, MySQL, Git, npm, Figma,
+                Sketch and Adobe Photoshop.
+                <br>
+                <br>
+                My main goal is to always be a useful part of the team. I’m
+                always open when it comes to communication. Can be effective
+                when it comes to finding quick solutions. Always learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="main__skills skills">
+        <div class="skills__container container">
+          <div class="skills__row row">
+            <h2 class="skills__title title">Skills</h2>
+            <div class="skills__wrapper section-wrapper">
+              <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">SCSS (SASS)</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">BEM</li>
+                <li class="skills__item">Git</li>
+                <li class="skills__item">npm</li>
+                <li class="skills__item">OpenCart</li>
+                <li class="skills__item">Figma</li>
+                <li class="skills__item">Sketch</li>
+                <li class="skills__item">Adobe Photoshop</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="main__projects projects">
+        <div class="projects__container container">
+          <div class="projects__row row">
+            <h2 class="projects__title title">Projects</h2>
+            <div class="projects__wrapper section-wrapper">
+              <div class="projects__work work">
+                <img src="assets/img/projects-uno.png" alt="uno" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://unographics.000webhostapp.com/" target="_blank">uno</a>
+                  <br>
+                  <p class="work__description">
+                    A page and a custom admin-panel for a designer. For this
+                    one I used HTML, SCSS, JS, PHP and MySQL. In admin-panel
+                    you can add, remove and edit artworks images, names,
+                    b-side names, categories, etc. Every artwork page is
+                    generated depending on its ID.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__work work">
+                <img src="assets/img/projects-saldi.png" alt="Saldi" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://saldi.kz/" target="_blank">Saldi</a>
+                  <p class="work__description">
+                    An e-commerce responsive store based on CMS OpenCart with
+                    custom design.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__work work">
+                <img src="assets/img/projects-museum.png" alt="Museum" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://davilexx.github.io/museum/" target="_blank">
+                    Museum
+                  </a>
+                  <p class="work__description">
+                    A project I created while attending to RS School course.
+                    This one contains a custom JS video player and image
+                    slider in the Explore section. It’s also responsive.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__work work">
+                <img src="assets/img/projects-momentum.png" alt="Momentum" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://davilexx.github.io/momentum/" target="_blank">Momentum</a>
+                  <p class="work__description">
+                    Another project I developed at RS School. This is a
+                    replica of official Momentum extension. Some of the
+                    implemented functionality: saving the name and the weather
+                    location in a local storage, audio player, randomised
+                    background and the quotes, settings where you can choose
+                    what to display and also change the language.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__work work">
+                <img src="assets/img/projects-rfa.png" alt="React Food App" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://davilexx.github.io/react-food-app/" target="_blank">React Food
+                    App</a>
+                  <p class="work__description">
+                    React app that getting all the food data from the
+                    Spoonacular API. Contains a search bar and four different
+                    categories which display the food depends on its name in
+                    the address bar.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__work work">
+                <img src="assets/img/projects-allca.png" alt="All.ca" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://davilexx.github.io/all.ca/" target="_blank">All.ca</a>
+                  <p class="work__description">
+                    A simple landing page which I made as a test task for some
+                    company. Fully responsive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="main__experience experience">
+        <div class="experience__container container">
+          <div class="experience__row row">
+            <h2 class="experience__title title">Experience and courses</h2>
+            <h4 class="experience__job">Freelance</h4>
+            <p class="experience__desc">Jan 1 2021–currently</p>
+            <h4 class="experience__job experience__job_courses courses">
+              Courses
+            </h4>
+            <ul class="courses__list">
+              <li class="courses__item">
+                Rolling Scopes School Course Stage#0 (2022–currently)
+              </li>
+              <li class="courses__item">
+                Rolling Scopes School Course Stage#1 (2021)
+              </li>
+              <li class="courses__item">
+                Gorbunov’s Bureau Design School Preparatory Course (2021)
+              </li>
+              <li class="courses__item">
+                Glo Academy HTML & CSS Advanced Course (2016)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="example" class="main__example example">
+        <div class="example__container container">
+          <div class="example__row row">
+            <h2 class="example__title title">Code example</h2>
+            <h4 class="example__kata">Count characters in your string</h4>
+            <a href="https://www.codewars.com/kata/52efefcbcdf57161d4000091" class="example__link">6 kyu kata from
+              Codewars</a>
+            <p class="example__desc">
+              The main idea is to count all the occurring characters in a
+              string. If you have a string like aba, then the result should be
+              <code>{'a': 2, 'b': 1}</code>. What if the string is empty? Then
+              the result should be empty object literal, <code>{}</code>.
+            </p>
+            <div class="example__code">
+              <pre><code class="code__js language-js hljs language-javascript">
+  const count = string => {  
+    if (string.length === 0) {
+      return {};
+    }
+
+    const strArr = string.split('').sort();
+    let countObj = {};
+    let count = 0;
+
+    for (let i = 0; i &lt; strArr.length; i++) {
+      if (strArr[i] !== strArr[i - 1]) {
+        count = 0;
+        count++;
+        countObj[strArr[i]] = count;
+      } else {
+        count++;
+        countObj[strArr[i]] = count;
+      }
+    }
+    
+    return countObj;
+  }
+                </code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="main__education education">
+        <div class="education__container container">
+          <div class="education__row row">
+            <h2 class="education__title title">Education</h2>
+            <div class="education__wrapper">
+              <h3 class="education__university">
+                V. I. Vernadsky Crimean Federal University
+              </h3>
+              <p class="education__years">2018–2021</p>
+              <p class="education__specialty">
+                Applied Mathematics and Computer Science
+              </p>
+              <p class="education__level">Bachelor degree</p>
+            </div>
+            <div class="education__wrapper">
+              <h3 class="education__university">
+                V. I. Vernadsky Tauride College
+              </h3>
+              <p class="education__years">2014–2018</p>
+              <p class="education__specialty">
+                Programming in Computer Systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="languages" class="main__languages languages">
+        <div class="languages__container container">
+          <div class="languages__row row">
+            <h2 class="languages__title title">Languages</h2>
+            <div class="languages__wrapper">
+              <h3 class="languages__lang">English</h3>
+              <p class="languages__level">B1/B2</p>
+            </div>
+            <div class="languages__wrapper">
+              <h3 class="languages__lang">Russian</h3>
+              <p class="languages__level">Native</p>
+            </div>
+            <div class="languages__wrapper">
+              <h3 class="languages__lang">Ukrainian</h3>
+              <p class="languages__level">Upper-intermediate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="main__contacts contacts">
+        <div class="contacts__container container">
+          <div class="contacts__row row">
+            <h2 class="contacts__title title">Contacts</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item_phone">
+                <img class="contacts__img" src="assets/svg/contacts-phone.svg" alt="phone">
+                <a class="contacts__link" href="phone:+77058729539" target="_blank">
+                  +7 (705) 872-95-39
+                </a>
+              </li>
+              <li class="contacts__item contacts__item_mail">
+                <img class="contacts__img" src="assets/svg/contacts-mail.svg" alt="phone">
+                <a class="contacts__link" href="mailto:andro.front99@gmail.com" target="_blank">
+                  andro.front99@gmail.com
+                </a>
+              </li>
+              <li class="contacts__item contacts__item_tg">
+                <img class="contacts__img" src="assets/svg/contacts-tg.svg" alt="phone">
+                <a class="contacts__link" href="https://t.me/davilex_x" target="_blank">@davilex_x</a>
+              </li>
+              <li class="contacts__item contacts__item_in">
+                <img class="contacts__img" src="assets/svg/contacts-in.svg" alt="phone">
+                <a class="contacts__link" href="https://linkedin.com/in/kharmansky" target="_blank">kharmansky</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__container container">
+        <div class="footer__row row">
+          <div class="footer__wrapper">
+            <div class="footer__item">2022</div>
+            <div class="footer__item">
+              <a href="https://github.com/davilexx" class="footer__link" target="_blank">
+                <img class="footer__img footer__img_gh" src="assets/svg/footer-gh.svg" alt="GitHub">
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="https://rs.school/js/" class="footer__link" target="_blank">
+                <img class="footer__img" src="assets/svg/footer-rs.svg" alt="RS School">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
