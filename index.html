@@ -10,7 +10,7 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- styles -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -20,6 +20,9 @@
 <body class="page">
   <div class="page__wrapper wrapper">
     <header class="page__header header">
+      <div class="header__burger">
+        <span></span>
+      </div>
       <nav class="header__nav">
         <ul class="header__list list">
           <li class="list__item">
@@ -59,16 +62,15 @@
               <p class="about__info">23 y.o., Astana, Kazakhstan</p>
               <p class="about__desc">
                 Front-end developer with more than two years of experience
-                working with HTML, CSS, SCSS (SASS), JavaScript and basics of React.
-                Always using Flexbox, Bootstrap and BEM-methodology in
-                projects. Had experience developing e-commerce stores using
-                CMS OpenCart. Also worked with PHP, MySQL, Git, npm, Figma,
+                working with HTML, CSS, SCSS (SASS), JavaScript.
+                Using Flexbox, Bootstrap and BEM-methodology. Had experience developing e-commerce stores using
+                CMS OpenCart. Also worked with React, Git, npm, Figma,
                 Sketch and Adobe Photoshop.
                 <br>
                 <br>
                 My main goal is to always be a useful part of the team. I’m
                 always open when it comes to communication. Can be effective
-                when it comes to finding quick solutions. Always learning.
+                in finding quick solutions. Always learning.
               </p>
             </div>
           </div>
@@ -104,13 +106,23 @@
               <div class="projects__work work">
                 <img src="assets/img/projects-uno.png" alt="uno" class="work__img">
                 <div class="work__info">
-                  <a class="work__link" href="https://unographics.000webhostapp.com/" target="_blank">uno</a>
+                  <a class="work__link" href="https://davilexx.github.io/uno/" target="_blank">uno</a>
                   <br>
                   <p class="work__description">
-                    A page and a custom admin dashboard. For this
-                    project I used HTML, SCSS, JS, PHP and MySQL. In dashboard
-                    you can add, remove and edit any of artwork information. Every artwork page is
-                    generated depending on its ID.
+                    A fully responsive web page for designer's portfolio based on his own custom design.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__work work">
+                <img src="assets/img/projects-momentum.png" alt="Momentum" class="work__img">
+                <div class="work__info">
+                  <a class="work__link" href="https://davilexx.github.io/momentum/" target="_blank">Momentum</a>
+                  <p class="work__description">
+                    A replica of an official Momentum extension. Implemented modules: greeting, time and date, weather
+                    forecast, quote of the day, a custom audio player and settings. You can set the background using
+                    GitHub, Unsplash or Flickr as a source with a preferred tag. You can also change a language and
+                    choose what module to display in settings. Name, weather location and preferred settings are saved
+                    in a local storage, so last changes are available after updating the page.
                   </p>
                 </div>
               </div>
@@ -119,7 +131,7 @@
                 <div class="work__info">
                   <a class="work__link" href="https://saldi.kz/" target="_blank">Saldi</a>
                   <p class="work__description">
-                    An e-commerce responsive store based on CMS OpenCart with
+                    An e-commerce responsive website based on CMS OpenCart with
                     custom design, Telegram order notifications and simplified order page.
                   </p>
                 </div>
@@ -134,20 +146,6 @@
                     A project I created while attending to RS School course Stage#1 in 2021.
                     This one contains a custom JS video player and image
                     slider in the Explore section. It’s also responsive.
-                  </p>
-                </div>
-              </div>
-              <div class="projects__work work">
-                <img src="assets/img/projects-momentum.png" alt="Momentum" class="work__img">
-                <div class="work__info">
-                  <a class="work__link" href="https://davilexx.github.io/momentum/" target="_blank">Momentum</a>
-                  <p class="work__description">
-                    Another project I developed at RS School. This is a
-                    replica of an official Momentum extension. Some of the
-                    implemented functionality: saving the name and the weather
-                    location in a local storage, an audio player, a randomized
-                    background and quotes, and also settings where you can choose
-                    what to display and change the language.
                   </p>
                 </div>
               </div>
@@ -198,7 +196,7 @@
                 Gorbunov’s Bureau Design School Preparatory Course (2021)
               </li>
               <li class="courses__item">
-                Glo Academy HTML & CSS Advanced Course (2016)
+                Glo Academy HTML &amp; CSS Advanced Course (2016)
               </li>
             </ul>
           </div>
@@ -220,7 +218,7 @@
             </p>
             <div class="example__code">
               <pre><code class="code__js language-js hljs language-javascript">
-  const count = string => {  
+  const count = string =&gt; {  
     if (string.length === 0) {
       return {};
     }
@@ -297,7 +295,7 @@
               <li class="contacts__item contacts__item_phone">
                 <img class="contacts__img" src="assets/svg/contacts-phone.svg" alt="phone">
                 <a class="contacts__link" href="tel:+77058729539" target="_blank">
-                  +7 (705) 872-95-39
+                  +7&nbsp;(705)&nbsp;872&#8209;95&#8209;39
                 </a>
               </li>
               <li class="contacts__item contacts__item_mail">

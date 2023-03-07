@@ -1,12 +1,31 @@
 hljs.highlightAll();
 
-const bg = document.querySelector(".main__bg");
+const burger = document.querySelector(".header__burger");
+const nav = document.querySelector(".header__nav");
+const links = document.querySelectorAll(".list__link");
+
+const toggleMenu = () => {
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+};
+
+burger.addEventListener("click", () => {
+  toggleMenu();
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMenu();
+  });
+});
 
 window.addEventListener("scroll", () => {
-  var scroll =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop ||
-    0;
-  bg.style.opacity = Math.max(0, Math.min(1, -scroll / 400 + 2));
+  const removeHash = () => {
+    history.pushState(
+      "",
+      document.title,
+      window.location.pathname + window.location.search
+    );
+  };
+  removeHash();
 });
